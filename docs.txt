@@ -9,3 +9,6 @@ $ scrapy startproject project_name
 create a spider by runnning the following code inside the bookscraper/spiders folder:
 $ scrapy genspider bookspider books.toscrape.com
 where bookspider is the assigned spider's name
+
+rename last commit message:
+$ git commit --amend
