@@ -4,11 +4,22 @@ https://thepythonscrapyplaybook.com/freecodecamp-beginner-course/
 
 https://github.com/orgs/python-scrapy-playbook/repositories
 
+next:
+https://thepythonscrapyplaybook.com/freecodecamp-beginner-course/freecodecamp-scrapy-beginners-course-part-5-advanced-scraper/
+
 $ scrapy startproject project_name
 
-create a spider by runnning the following code inside the bookscraper/spiders folder:
+create a generic spider by runnning the following code inside the bookscraper/spiders folder:
 $ scrapy genspider bookspider books.toscrape.com
 where bookspider is the assigned spider's name
 
 rename last commit message:
 $ git commit --amend
+
+open scrapy shell:
+$ scrapy shell
+
+inside bookscraper folder, run:
+$ scrapy crawl bookspider
+$ scrapy crawl bookspider -O myscrapeddata.json
+scrapy crawl bookspider -O myscrapeddata.csv
